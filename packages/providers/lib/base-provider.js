@@ -908,6 +908,7 @@ var BaseProvider = /** @class */ (function (_super) {
                         if (this._lastBlockNumber === -2) {
                             this._lastBlockNumber = blockNumber - 1;
                         }
+                        console.log('this._lastBlockNumber', this._lastBlockNumber);
                         // Find all transaction hashes we are waiting on
                         this._events.forEach(function (event) {
                             switch (event.type) {

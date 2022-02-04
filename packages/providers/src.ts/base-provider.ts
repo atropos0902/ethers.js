@@ -889,6 +889,8 @@ export class BaseProvider extends Provider implements EnsProvider {
             this._lastBlockNumber = blockNumber - 1;
         }
 
+        console.log('this._lastBlockNumber', this._lastBlockNumber);
+
         // Find all transaction hashes we are waiting on
         this._events.forEach((event) => {
             switch (event.type) {
