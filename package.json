@@ -20,9 +20,9 @@
     "url": "git://github.com/atropos0902/ethers.js.git"
   },
   "scripts": {
+    "bootstrap-hoist": "node ./misc/admin/lib/cmds/hoist",
     "preinstall": "npm run bootstrap-hoist",
     "postinstall": "node ./misc/admin/lib/cmds/update-depgraph && npm run bootstrap-link",
-    "bootstrap-hoist": "node ./misc/admin/lib/cmds/hoist",
     "bootstrap-link": "node ./misc/admin/lib/cmds/link",
     "auto-build": "node ./misc/admin/lib/cmds/set-build-option cjs && npm run build -- -w",
     "auto-build-esm": "node ./misc/admin/lib/cmds/set-build-option esm && npm run build -- -w",
